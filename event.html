@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="./css/event.css"/>
+    <title >PHE Event</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+
+    <header>
+      <h1>Event Mode</h1>
+    </header>
+    <header>
+      <a class="logo">PHE</a>
+      <ul class="nav">
+        <li><a href="./index.html">[ Home ]</a></li>
+        <li><a href="https://discord.gg/3eHzx7SS">[ Discord ]</a></li>
+      </ul>
+    </header>
+
+    <div class="banner">
+      <div class="content Build-a-Boat active">
+        <img class="title" src="https://tr.rbxcdn.com/180DAY-2642774e00b871f246810c45f3ec5faf/512/512/Image/Webp/noFilter"/>
+        <h4>
+          <span>Build a Boat</span>
+          <em><i>Active</i></em>
+        </h4>
+        <div class="button">
+          <a href="" target="_blank"><i aria-hidden="true"></i>Privatd Server</a>
+        </div>
+      </div>
+      
+      <div class="content Rivals">
+        <img class="title" src="https://tr.rbxcdn.com/180DAY-21159af31507eba3cef7ab89c996e471/512/512/Image/Webp/noFilter"/>
+        <h4>
+          <span>Rivals</span>
+          <span><i>Inactive</i></span>
+        </h4>
+        <div class="button">
+          <a href="" target="_blank"><i aria-hidden="true"></i>Privatd Server</a>
+        </div>
+      </div>
+
+      <div class="content Randomizer">
+        <img class="title" src="https://tr.rbxcdn.com/180DAY-2cf5f760d16a4ae07ed5785d42e757cb/512/512/Image/Webp/noFilter"/>
+        <h4>
+          <span>Randomizer</span>
+          <span><i>Inactive</i></span>
+        </h4>
+        <div class="button">
+          <a href="" target="_blank"><i aria-hidden="true"></i>Privatd Server</a>
+        </div>
+      </div>
+
+      <div class="content Item-asylum">
+        <img class="title" src="https://tr.rbxcdn.com/180DAY-4add3497895c94cfb24c0ff9b038dddf/512/512/Image/Webp/noFilter"/>
+        <h4>
+          <span>Item asylum</span>
+          <span><i>Inactive</i></span>
+        </h4>
+        <div class="button">
+          <a href="" target="_blank"><i aria-hidden="true"></i>Privatd Server</a>
+        </div>
+      </div>
+
+      <div class="content Gunfight-Arena">
+        <img class="title" src="https://tr.rbxcdn.com/180DAY-9408e4b78dfc54b4bbcf338b032715eb/512/512/Image/Webp/noFilter"/>
+        <h4>
+          <span>Gunfight Arena</span>
+          <span><i>Inactive</i></span>
+        </h4>
+        <div class="button">
+          <a href="" target="_blank"><i aria-hidden="true"></i>Privatd Server</a>
+        </div>
+      </div>
+
+      <div class="carousel-box">
+        <div class="carousel">
+
+          <div class="carousel-item" onClick="changeBg('', 'Build-a-Boat');">
+            <img src="https://tr.rbxcdn.com/180DAY-2642774e00b871f246810c45f3ec5faf/512/512/Image/Webp/noFilter"/>
+            <h1>
+              <a>Build a Boat</a>
+            </h1>
+          </div>
+
+          <div class="carousel-item" onClick="changeBg('', 'Rivals');">
+            <img src="https://tr.rbxcdn.com/180DAY-21159af31507eba3cef7ab89c996e471/512/512/Image/Webp/noFilter"/>
+            <h1>
+              <span>Rivals</span>
+            </h1>
+          </div>
+
+          <div class="carousel-item" onClick="changeBg('', 'Randomizer');">
+            <img src="https://tr.rbxcdn.com/180DAY-2cf5f760d16a4ae07ed5785d42e757cb/512/512/Image/Webp/noFilter"/>
+            <h1>
+              <span>Randomizer</span>
+            </h1>
+          </div>
+
+          <div class="carousel-item" onClick="changeBg('', 'Item-asylum');">
+            <img src="https://tr.rbxcdn.com/180DAY-4add3497895c94cfb24c0ff9b038dddf/512/512/Image/Webp/noFilter"/>
+            <h1>
+              <span>Item asylum</span>
+            </h1>
+          </div>
+
+          <div class="carousel-item" onClick="changeBg('', 'Gunfight-Arena');">
+            <img src="https://tr.rbxcdn.com/180DAY-9408e4b78dfc54b4bbcf338b032715eb/512/512/Image/Webp/noFilter"/>
+            <h1>
+              <span>Gunfight Arena</span>
+            </h1>
+          </div>
+
+        </div>
+      </div>
+
+      <li>
+        <div class="countdown" id="countdown"></div>
+      </li>
+      <li>
+        <a href="https://www.roblox.com/games/537413528" class="play" target="_blank">[ Build a boat ]</a>
+      </li>
+    </div>
+
+    <div class="trailer">
+      <video
+        src="./assets/"
+        muted
+        controls="true"
+        autoplay="true"
+      ></video>
+      <img
+        class="close"
+        src="./images/close.png"
+        alt="close"
+        onClick="toggleVideo()"
+      />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/event.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.carousel').carousel();
+      });
+    </script>
+  </body>
+</html>
