@@ -387,6 +387,7 @@ li {
   font-size: 1.2em;
   cursor: pointer !important;
   transition: 0.3s;
+  white-space: nowrap;
   list-style: none;
 }
 
