@@ -14,7 +14,7 @@ const countdownInterval = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "[ Live Now ! ]";
+        document.getElementById("countdown").innerHTML = "[ ------- ]";
     }
 }, 1000);
 
