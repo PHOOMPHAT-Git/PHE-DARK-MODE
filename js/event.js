@@ -14,7 +14,7 @@ const countdownInterval = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "[ ------- ]";
+        document.getElementById("countdown").innerHTML = "[ Don't Know ]";
     }
 }, 1000);
 
