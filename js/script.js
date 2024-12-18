@@ -14,9 +14,16 @@ const countdownInterval = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "[ Don't Know ]";
+        document.getElementById("countdown").innerHTML = "[ Live Now ! ]";
     }
 }, 1000);
+
+function toggleVideo() {
+  const trailer = document.querySelector('.trailer');
+  const video = document.querySelector('video');
+  video.pause();
+  trailer.classList.toggle('active');
+}
 
 function changeBg(bg, title) {
   const banner = document.querySelector('.banner');
