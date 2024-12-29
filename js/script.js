@@ -1,4 +1,4 @@
-const targetDate = new Date('December 26, 2024 19:30:00').getTime();
+const targetDate = new Date('December 29, 2024 19:30:00').getTime();
 
 const countdownInterval = setInterval(function() {
     const now = new Date().getTime();
@@ -14,7 +14,7 @@ const countdownInterval = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = "[ Don't know ]";
+        document.getElementById("countdown").innerHTML = "[ Live Now ! ]";
     }
 }, 1000);
 
